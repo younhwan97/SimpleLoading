@@ -1,4 +1,4 @@
-package kr.co.younhwan.simpleloadingdialog
+package kr.co.younhwan.simpleloading
 
 import org.junit.Test
 

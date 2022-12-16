@@ -1,4 +1,4 @@
-package kr.co.younhwan.simpleloadingdialog
+package kr.co.younhwan.simpleloading
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -15,15 +15,15 @@ import androidx.compose.ui.window.Dialog
 import com.airbnb.lottie.compose.*
 
 @Composable
-fun SimpleLoadingDialog(openDialogCustom: MutableState<Boolean>) {
+fun SimpleLoading(openDialogCustom: MutableState<Boolean>) {
     Dialog(onDismissRequest = { openDialogCustom.value = false }) {
-        SimpleLoadingDialogUI(openDialogCustom = openDialogCustom)
+        SimpleLoadingUI(openDialogCustom = openDialogCustom)
     }
 }
 
 //Layout
 @Composable
-fun SimpleLoadingDialogUI(modifier: Modifier = Modifier, openDialogCustom: MutableState<Boolean>) {
+fun SimpleLoadingUI(modifier: Modifier = Modifier, openDialogCustom: MutableState<Boolean>) {
     Card(
         //shape = MaterialTheme.shapes.medium,
         shape = RoundedCornerShape(10.dp),

@@ -1,4 +1,4 @@
-package kr.co.younhwan.simpleloadingdialog
+package kr.co.younhwan.simpleloading
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'kr.co.younhwan.simpleloadingdialog'
+    namespace 'kr.co.younhwan.simpleloading'
     compileSdk 32
 
     defaultConfig {
-        applicationId "kr.co.younhwan.simpleloadingdialog"
+        applicationId "kr.co.younhwan.simpleloading"
         minSdk 21
         targetSdk 32
         versionCode 1

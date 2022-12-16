@@ -1,15 +1,11 @@
-package kr.co.younhwan.simpleloadingdialog
+package kr.co.younhwan.simpleloading
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.ui.tooling.preview.Preview
-import kr.co.younhwan.simpleloadingdialog.ui.theme.SimpleLoadingDialogTheme
+import kr.co.younhwan.simpleloading.ui.theme.SimpleLoadingDialogTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +18,7 @@ class MainActivity : ComponentActivity() {
                     mutableStateOf(true)
                 }
 
-                SimpleLoadingDialog(state)
+                SimpleLoading(state)
             }
         }
     }
