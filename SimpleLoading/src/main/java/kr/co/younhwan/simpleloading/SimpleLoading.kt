@@ -57,7 +57,7 @@ fun SimpleLoadingUI(
             }
 
             Column() {
-                val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.image2))
+                val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.loading))
                 val progress by animateLottieCompositionAsState(
                     composition = composition,
                     iterations = LottieConstants.IterateForever
