@@ -20,10 +20,10 @@ class MainActivity : ComponentActivity() {
                     mutableStateOf(false)
                 }
 
-                SimpleLoading(
-                    openDialogCustom = state,
-                    onClose = { state.value = !state.value }
-                )
+//                SimpleLoading(
+//                    openDialogCustom = state,
+//                    onClose = { state.value = !state.value }
+//                )
 
                 Button(onClick = { state.value = !state.value }) {
                     Text(text = "click")
