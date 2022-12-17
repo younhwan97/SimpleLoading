@@ -14,6 +14,6 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "SimpleLoadingDialog"
+rootProject.name = "SimpleLoading"
 include ':app'
 include ':SimpleLoading'
