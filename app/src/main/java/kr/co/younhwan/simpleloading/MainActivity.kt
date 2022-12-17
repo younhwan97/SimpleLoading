@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                 SimpleLoading(
                     openDialogCustom = state,
                     color = Color.Black,
-                    clickableClose = true
+                    clickableClose = false
                 )
 
                 Button(onClick = { state.value = !state.value }) {

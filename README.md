@@ -45,9 +45,7 @@ SimpleLoading(
 )
 ```
 
-<div width="310" align="right">
-    <img align="right" src="preview/preview2.gif" width="290"/>
-</div>
+<img align="right" src="preview/preview2.gif" width="290" height="575"/>
 
 You can change the color of the dialog using the `color` parameter. 
 
@@ -65,7 +63,7 @@ SimpleLoading(
 
 <br><br>
 
-If you want to hide the close button, pass true to the `clickableClose` parameter as seen in the below:
+If you want to hide the close button, pass `false` to the `clickableClose` parameter as seen in the below:
 
 ```kotlin
 val state = remember {
@@ -75,6 +73,6 @@ val state = remember {
 SimpleLoading(
     openDialogCustom = state,
     color = Color.Black,
-    clickableClose = true
+    clickableClose = false
 )
 ```
