@@ -51,12 +51,12 @@ You can change the color of the dialog using the `color` parameter.
 
 ```kotlin
 val state = remember {
-                    mutableStateOf(false)
-                }
+    mutableStateOf(false)
+}
 
-                SimpleLoading(
-                    openDialogCustom = state,
-                    color = Color.Black
-                )
+SimpleLoading(
+    openDialogCustom = state,
+    color = Color.Black
+)
 
 ```
