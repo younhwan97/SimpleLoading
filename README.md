@@ -4,7 +4,7 @@
   <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
 </p><br>
 
-<p align="center">
+<!-- <p align="center">
 ☁️ Compose blur effect library, which falls back on to a CPU-based implementation to support older API levels.
 </p><br>
 
@@ -14,7 +14,7 @@
 <img src="preview/gif0.gif" width="268"/>
 <img src="preview/img1.png" width="270"/>
 <img src="preview/img2.png" width="268"/>
-</p>
+</p> -->
 
 ## Download
 [![jipack](https://jitpack.io/v/younhwan97/SimpleLoading.svg)](https://jitpack.io/#younhwan97/SimpleLoading)
