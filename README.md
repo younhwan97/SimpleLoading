@@ -6,7 +6,7 @@
 
 > 💡 This library provide a simple loading dialog for Jetpack Compose.</p>
 <p align="center">
-<img src="https://github.com/younhwan97/SimpleLoading/blob/main/preview/image.gif?raw=true" width="268"/>
+<img src="preview/img1.png" width="268"/>
 </p>
 
 ## Download
@@ -45,7 +45,7 @@ SimpleLoading(
 )
 ```
 
-<img align="right" src="https://github.com/younhwan97/SimpleLoading/blob/main/preview/image2.png" width="290"/>
+<img align="right" src="preview/img2.png" width="290"/>
 
 You can change the color of the dialog using the `color` parameter.
 
