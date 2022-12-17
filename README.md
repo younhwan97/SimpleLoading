@@ -6,7 +6,8 @@
 
 > 💡 This library provide a simple loading dialog for Jetpack Compose.</p>
 <p align="center">
-<img src="preview/image1.gif" width="268"/>
+<img src="preview/preview1.gif" width="268"/>
+<img src="preview/preview2.gif" width="268"/>
 </p>
 
 ## Download
@@ -46,10 +47,10 @@ SimpleLoading(
 ```
 
 <div width="310" align="right">
-    <img align="right" src="preview/image-2.gif" width="290"/>
+    <img align="right" src="preview/preview2.gif" width="290"/>
 </div>
 
-You can change the color of the dialog using the `color` parameter. &nbsp;&nbsp;&nbsp;
+You can change the color of the dialog using the `color` parameter. 
 
 ```kotlin
 val state = remember {
@@ -62,3 +63,9 @@ SimpleLoading(
 )
 
 ```
+
+<div width="310" align="right">
+    <img align="right" src="preview/preview2.gif" width="290"/>
+</div>
+
+You can change the color of the dialog using the `color` parameter. 
