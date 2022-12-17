@@ -61,7 +61,7 @@ SimpleLoading(
 
 ```
 
-<br><br>
+<br>
 
 If you want to hide the close button, pass `false` to the `clickableClose` parameter as seen in the below:
 
