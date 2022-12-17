@@ -7,7 +7,6 @@
 > 💡 This library provide a simple loading dialog for Jetpack Compose.</p>
 <p align="center">
 <img src="preview/preview1.gif" width="268"/>
-<img src="preview/preview2.gif" width="268"/>
 </p>
 
 ## Download
@@ -62,4 +61,20 @@ SimpleLoading(
     color = Color.Black
 )
 
+```
+
+<br><br>
+
+If you want to hide the close button, pass true to the `clickableClose` parameter as seen in the below:
+
+```kotlin
+val state = remember {
+    mutableStateOf(false)
+}
+
+SimpleLoading(
+    openDialogCustom = state,
+    color = Color.Black,
+    clickableClose = true
+)
 ```

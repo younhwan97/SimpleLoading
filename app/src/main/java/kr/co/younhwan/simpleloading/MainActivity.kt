@@ -21,7 +21,8 @@ class MainActivity : ComponentActivity() {
 
                 SimpleLoading(
                     openDialogCustom = state,
-                    color = Color.Black
+                    color = Color.Black,
+                    clickableClose = true
                 )
 
                 Button(onClick = { state.value = !state.value }) {
