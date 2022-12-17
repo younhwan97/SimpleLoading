@@ -4,17 +4,10 @@
   <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
 </p><br>
 
-<!-- <p align="center">
-☁️ Compose blur effect library, which falls back on to a CPU-based implementation to support older API levels.
-</p><br>
-
-> <p align="center">The `blur` modifier supports only Android 12 and higher, and `RenderScript` APIs are deprecated starting in Android 12.
-> Cloudy is the backport of the blur effect for Jetpack Compose.</p>
+> SimpleLoading provide a simple loading dialog for Jetpack Compose.</p>
 <p align="center">
-<img src="preview/gif0.gif" width="268"/>
-<img src="preview/img1.png" width="270"/>
-<img src="preview/img2.png" width="268"/>
-</p> -->
+<img src="https://github.com/younhwan97/SimpleLoading/blob/main/preview/image.gif?raw=true" width="268"/>
+</p>
 
 ## Download
 [![jipack](https://jitpack.io/v/younhwan97/SimpleLoading.svg)](https://jitpack.io/#younhwan97/SimpleLoading)
