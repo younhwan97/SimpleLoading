@@ -4,7 +4,7 @@
   <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
 </p><br>
 
-> SimpleLoading provide a simple loading dialog for Jetpack Compose.</p>
+> 💡 This library provide a simple loading dialog for Jetpack Compose.</p>
 <p align="center">
 <img src="https://github.com/younhwan97/SimpleLoading/blob/main/preview/image.gif?raw=true" width="268"/>
 </p>
@@ -45,3 +45,18 @@ SimpleLoading(
 )
 ```
 
+<img align="right" src="https://github.com/younhwan97/SimpleLoading/blob/main/preview/image2.png" width="290"/>
+
+You can change the color of the dialog using the `color` parameter.
+
+```kotlin
+val state = remember {
+                    mutableStateOf(false)
+                }
+
+                SimpleLoading(
+                    openDialogCustom = state,
+                    color = Color.Black
+                )
+
+```

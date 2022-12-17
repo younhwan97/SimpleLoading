@@ -7,6 +7,7 @@ import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.graphics.Color
 import kr.co.younhwan.simpleloading.ui.theme.SimpleLoadingDialogTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +21,7 @@ class MainActivity : ComponentActivity() {
 
                 SimpleLoading(
                     openDialogCustom = state,
-                    clickableBackground = false,
-                    clickableClose = true
+                    color = Color.Black
                 )
 
                 Button(onClick = { state.value = !state.value }) {
