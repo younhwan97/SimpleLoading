@@ -45,9 +45,9 @@ SimpleLoading(
 )
 ```
 
-<img align="right" src="preview/img2.gif" width="290"/>
+<img align="right" src="preview/img2.gif" width="290" style="margin: 16px"/>
 
-You can change the color of the dialog using the `color` parameter.
+You can change the color of the dialog using the `color` parameter. &nbsp;&nbsp;&nbsp;
 
 ```kotlin
 val state = remember {
