@@ -45,7 +45,9 @@ SimpleLoading(
 )
 ```
 
-<img align="right" src="preview/image2.gif" width="290" style="margin: 16px"/>
+<span width="310" align="right">
+    <img align="right" src="preview/image2.gif" width="290"/>
+</span>
 
 You can change the color of the dialog using the `color` parameter. &nbsp;&nbsp;&nbsp;
 
