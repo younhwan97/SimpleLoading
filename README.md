@@ -36,7 +36,7 @@ allprojects {
 
 ```gradle
 dependencies {
-        implementation 'com.github.younhwan97:SimpleLoading:0.0.6'
+    implementation 'com.github.younhwan97:SimpleLoading:0.0.6'
 }
 ```
 
@@ -51,3 +51,4 @@ SimpleLoading(
     openDialogCustom = state
 )
 ```
+

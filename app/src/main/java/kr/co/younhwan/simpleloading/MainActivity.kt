@@ -18,11 +18,11 @@ class MainActivity : ComponentActivity() {
                     mutableStateOf(false)
                 }
 
-//                SimpleLoading(
-//                    openDialogCustom = state,
-//                    clickableBackground = false,
-//                    clickableClose = true
-//                )
+                SimpleLoading(
+                    openDialogCustom = state,
+                    clickableBackground = false,
+                    clickableClose = true
+                )
 
                 Button(onClick = { state.value = !state.value }) {
                     Text(text = "click")
