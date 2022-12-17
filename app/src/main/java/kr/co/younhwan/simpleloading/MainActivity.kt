@@ -13,17 +13,16 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
-
             SimpleLoadingDialogTheme {
                 val state = remember {
                     mutableStateOf(false)
                 }
 
-//                SimpleLoading(
-//                    openDialogCustom = state,
-//                    onClose = { state.value = !state.value }
-//                )
+                SimpleLoading(
+                    openDialogCustom = state,
+                    clickableBackground = false,
+                    clickableClose = true
+                )
 
                 Button(onClick = { state.value = !state.value }) {
                     Text(text = "click")

@@ -1,5 +1,7 @@
 package kr.co.younhwan.simpleloading
 
+import androidx.compose.animation.*
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -17,16 +19,23 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.airbnb.lottie.compose.*
 
+internal const val ANIMATION_TIME = 500L
+
 @Composable
 fun SimpleLoading(
     openDialogCustom: MutableState<Boolean>,
-    onClose: () -> Unit
+    clickableBackground: Boolean = false, // 배경을 클릭했을 때 다이얼로그가 닫히는지
+    clickableClose: Boolean = true, // 닫기 버튼을 클릭할 수 있는지
+    onClose: () -> Unit = { openDialogCustom.value = !openDialogCustom.value }
 ) {
     if (openDialogCustom.value) {
         Dialog(
-            onDismissRequest = { openDialogCustom.value = false }
+            onDismissRequest = {
+                if (clickableBackground) openDialogCustom.value = false
+            }
         ) {
             SimpleLoadingUI(
+                clickableClose = clickableClose,
                 onClose = onClose
             )
         }
@@ -36,6 +45,7 @@ fun SimpleLoading(
 @Composable
 fun SimpleLoadingUI(
     modifier: Modifier = Modifier,
+    clickableClose: Boolean,
     onClose: () -> Unit
 ) {
     Card(
@@ -47,13 +57,15 @@ fun SimpleLoadingUI(
             modifier
                 .background(Color.White)
         ) {
-            IconButton(
-                modifier = Modifier
-                    .padding(4.dp)
-                    .align(Alignment.TopEnd),
-                onClick = onClose
-            ) {
-                Icon(imageVector = Icons.Default.Close, contentDescription = null)
+            if (clickableClose) {
+                IconButton(
+                    modifier = Modifier
+                        .padding(4.dp)
+                        .align(Alignment.TopEnd),
+                    onClick = onClose
+                ) {
+                    Icon(imageVector = Icons.Default.Close, contentDescription = null)
+                }
             }
 
             Column() {
@@ -78,10 +90,9 @@ fun SimpleLoadingUI(
                         text = "Please wait ... ",
                         textAlign = TextAlign.Center,
                         modifier = Modifier
-                            .padding(top = 5.dp, bottom = 30.dp)
+                            .padding(top = 5.dp, bottom = 24.dp)
                             .fillMaxWidth(),
                         style = MaterialTheme.typography.body2,
-                        maxLines = 2,
                         overflow = TextOverflow.Ellipsis,
                         color = Color(0xFF4CBBA1),
                         fontWeight = FontWeight.Bold
